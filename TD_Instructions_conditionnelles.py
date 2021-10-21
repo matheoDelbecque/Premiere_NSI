@@ -98,3 +98,29 @@ def croissant(a,b,c):
         resultat = False
     return resultat
 print(croissant(5,2,7))
+
+#exercice 7
+
+def triangle(c1,c2,c3):
+    """
+    description de la fonction : affiche une des caractéristiques du triangle suivante : équilatéral, isocèle ou scalène
+    c1, c2, c3 (int ou float) : trois côtés du triangle
+    précondition sur les entrées : on considère que les valeurs de c1, c2 et c3 doivent permettre de construire un triangle
+    return (None)
+    """
+    if c1 == c2:
+        if c2 == c3:
+            print('Le triangle est équilatérale')
+        else:
+            print('Le triangle est isocèle')
+    elif c2 == c3:
+        print('Le triangle est isocèle')
+    elif c1 == c3:
+        print('Le triangle est isocèle')
+    else:
+        print('Le triangle est scalène')
+triangle(3,2,3)
+triangle(3,3,2)
+triangle(2,3,3)
+triangle(3,3,3)
+triangle(1,2,3)
