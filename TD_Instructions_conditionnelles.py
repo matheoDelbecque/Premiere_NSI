@@ -85,3 +85,16 @@ def bowling(boule1, boule2):
     else:
         print(boule1 + boule2)
 bowling(2,6)
+
+#exercice 5
+
+def croissant(a,b,c):
+    if a <= b :
+        if b<= c:
+            resultat = True
+        else :
+            resultat = False
+    else :
+        resultat = False
+    return resultat
+print(croissant(5,2,7))
