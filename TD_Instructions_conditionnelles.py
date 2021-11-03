@@ -99,6 +99,29 @@ def croissant(a,b,c):
     return resultat
 print(croissant(5,2,7))
 
+#exercice 6
+
+def annee_bissextile(annee):
+    """
+    Description de la fonction : Affiche si une annee est bissextile
+    boule1 (int) : annee en question
+    return (None) :
+    """
+    if annee%4 == 0:
+        if annee%100 == 0:
+            if annee%400 == 0:
+                print(annee,'est bissextile')
+            else:
+                print(annee,'n\'est pas bissextile')
+        else:
+            print(annee,'est bissextile')
+    else:
+        print(annee,'n\'est pas bissextile')
+annee_bissextile(1998)
+annee_bissextile(2004)
+annee_bissextile(2012)
+annee_bissextile(2021)
+
 #exercice 7
 
 def triangle(c1,c2,c3):
