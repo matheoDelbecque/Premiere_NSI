@@ -105,22 +105,20 @@ def annee_bissextile(annee):
     """
     Description de la fonction : Affiche si une annee est bissextile
     boule1 (int) : annee en question
-    return (None) :
+    return (bool) : renvoie True si l'année est bissextile ou False si elle ne l'est pas
     """
     if annee%4 == 0:
         if annee%100 == 0:
             if annee%400 == 0:
-                print(annee,'est bissextile')
+                bissextile = True
             else:
-                print(annee,'n\'est pas bissextile')
+                bissextile = False
         else:
-            print(annee,'est bissextile')
+            bissextile = True
     else:
-        print(annee,'n\'est pas bissextile')
-annee_bissextile(1998)
-annee_bissextile(2004)
-annee_bissextile(2012)
-annee_bissextile(2021)
+        bissextile = False
+    return bissextile
+print(annee_bissextile(2004))
 
 #exercice 7
 
