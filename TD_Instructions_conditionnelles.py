@@ -1,4 +1,4 @@
-#exercice 1
+#exercice 2
 
 def bac(prenom,nom,moyenne):
     """
@@ -12,7 +12,6 @@ def bac(prenom,nom,moyenne):
         print(prenom,nom,'a obtenu son baccalauréat, Félicitations !')
 bac('Alice','Dupont',12)
 
-#exercice 2
 
 def bac2(prenom,nom,moyenne):
     """
