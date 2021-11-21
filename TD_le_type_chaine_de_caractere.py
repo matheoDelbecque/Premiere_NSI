@@ -36,3 +36,12 @@ print(var.find(" "))
 print(var.find("p"))
 print(var.find("c'est"))
 print(var.find("z"))       #il affiche -1 car quand il y a une erreur il affiche -1
+
+#exercice 3
+
+def commence_par_majuscule(mot):
+    if mot.isupper() == True :
+        return True
+    else :
+        return False
+print(commence_par_majuscule("INFORMATIQUE"))
