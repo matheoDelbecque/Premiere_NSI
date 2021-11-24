@@ -45,3 +45,5 @@ def commence_par_majuscule(mot):
     else :
         return False
 print(commence_par_majuscule("INFORMATIQUE"))
+print(commence_par_majuscule("Bonjour"))
+print(commence_par_majuscule("python"))
