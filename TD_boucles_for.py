@@ -37,5 +37,5 @@ def nombreCaracteres(chaine):
     compteur = 0
     for i in chaine :
         compteur = compteur + 1
-    print(compteur)
-nombreCaracteres("bonjour")
+    return compteur
+print(nombreCaracteres("bonjour"))
