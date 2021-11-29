@@ -60,8 +60,8 @@ def rechercheIndice(chaine,c):
     c (str) : caractère recherché
     return (int ou None) : indice du caractère c danc chaine (None si le caractère c n'apparaît pas dans chaine)
     """
-    for lettre in chaine:
+    for lettre in range(len(chaine)):
         if lettre == c :
             resultat = chaine.find(c)
     return resultat
-print(rechercheIndice("Stallmann","a"))
+  print(rechercheIndice("Stallmann","a"))
