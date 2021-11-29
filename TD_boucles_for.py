@@ -39,3 +39,14 @@ def nombreCaracteres(chaine):
         compteur = compteur + 1
     return compteur
 print(nombreCaracteres("bonjour"))
+
+# exercice 5
+
+def compterOccurence(chaine,c):
+    compteur = 0
+    for lettre in chaine:
+        if lettre == c :
+            compteur = compteur + 1
+    return compteur
+print(compterOccurence("Guido Van Rossum", 'o'))
+print(compterOccurence("Linus Torvalds", 'z'))
