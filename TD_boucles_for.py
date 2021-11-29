@@ -50,3 +50,18 @@ def compterOccurence(chaine,c):
     return compteur
 print(compterOccurence("Guido Van Rossum", 'o'))
 print(compterOccurence("Linus Torvalds", 'z'))
+
+# exercice 6
+
+def rechercheIndice(chaine,c):
+    """
+    Description de la fonction : renvoie l'indice de la première occurence du caractère c dans chaine
+    chaine (str) : chaine de caractère dans laquelle la recherche s'effectue
+    c (str) : caractère recherché
+    return (int ou None) : indice du caractère c danc chaine (None si le caractère c n'apparaît pas dans chaine)
+    """
+    for lettre in chaine:
+        if lettre == c :
+            resultat = chaine.find(c)
+    return resultat
+print(rechercheIndice("Stallmann","a"))
