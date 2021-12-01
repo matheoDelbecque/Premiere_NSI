@@ -64,4 +64,13 @@ def rechercheIndice(chaine,c):
         if lettre == c :
             resultat = chaine.find(c)
     return resultat
-  print(rechercheIndice("Stallmann","a"))
+print(rechercheIndice("Stallmann","a"))
+
+#exercice 9
+
+def repetition(chaine,n):
+    m = ""
+    for c in chaine:
+        m = m + c*4
+    return m
+print(repetition("Python",4))
