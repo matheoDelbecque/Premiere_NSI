@@ -65,6 +65,16 @@ def rechercheIndice(chaine,c):
             return i
 print(rechercheIndice("Stallmann","a"))
 
+# exercice 7
+
+def produitChiffres(n):
+    s = 1
+    n = str(n)
+    for i in range(len(n)):
+        s = s * int(n[i])
+    return s
+print(produitChiffres(4132))
+
 #exercice 9
 
 def repetition(chaine,n):
