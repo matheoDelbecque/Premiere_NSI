@@ -83,3 +83,14 @@ def repetition(chaine,n):
         m = m + c*4
     return m
 print(repetition("Python",4))
+
+#exercice 10
+
+def est_premier(nb):
+    for i in range(2,nb):
+        if nb % i == 0:
+            return False
+        else:
+            return True
+print(est_premier(8))
+print(est_premier(11))
