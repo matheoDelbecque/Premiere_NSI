@@ -1,0 +1,25 @@
+#exercice11
+def croissant(a,b,c):
+    return a<=b and b<=c
+print(croissant(2,6,9))
+print(croissant(2,6,5))
+
+#exercice 12
+#1.
+def est_positif(nb):
+    return nb>=0
+print(est_positif(14))
+print(est_positif(-6))
+
+#2.
+def meme_signe(nb1,nb2):
+    return (nb1<=0 and nb2<=0) or (nb1>=0 and nb2>=0) 
+print(meme_signe(0,6))
+print(meme_signe(-5,3))
+print(meme_signe(-2,-7))
+
+#exercice 13
+def dans_rectangle(abscisse, ordonnee):
+    return (abscisse>=2 and abscisse<=10) and (ordonnee>=4 and ordonnee<=8)
+print(dans_rectangle(5,7))
+print(dans_rectangle(11,5))
