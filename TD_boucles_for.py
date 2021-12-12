@@ -87,10 +87,13 @@ print(repetition("Python",4))
 #exercice 10
 
 def est_premier(nb):
+    non_premier = 0
     for i in range(2,nb):
         if nb % i == 0:
-            return False
-        else:
-            return True
+            non_premier = non_premier + 1
+    if non_premier >= 1:
+        return False
+    else:
+        return True
 print(est_premier(8))
 print(est_premier(11))
