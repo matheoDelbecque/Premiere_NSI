@@ -49,7 +49,7 @@ def afficher_carre_diagonale(n):
                 print('O',end='')
             print()
         else :
-            nb=nb-(n-(n-1))
+            nb=nb-1
             for c3 in range(n-nb):
                 print('O',end='')
             print('X',end='')
