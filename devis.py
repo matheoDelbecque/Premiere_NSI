@@ -56,6 +56,4 @@ def est_reparation_couverte(total_couts):
     pré-conditions : le total des coûts est strictement positif
     post-conditions : Néant
     """
-    
     return total_couts <= 500
-
