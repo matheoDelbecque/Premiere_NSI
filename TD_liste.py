@@ -20,3 +20,19 @@ t = [0]*10
 for i in range(len(t)):
     t[i] = 10 - i
 print(t)
+
+#exercice 5
+
+def longueurNomV1(liste_nom) : 
+    liste_longueur = []
+    for nom in liste_nom:
+        liste_longueur.append(len(nom))
+    return liste_longueur
+print(longueurNomV1(['Jean-Michel', 'Marc', 'Vanessa', 'Anne', 'Maximilien', 'Alexandre-Benoît', 'Louise']))
+
+def longueurNomv2(liste_nom) : 
+    liste_longueur = [0]*len(liste_nom)
+    for i in range(len(liste_nom)):
+        liste_longueur[i] = len(liste_nom[i])
+    return liste_longueur
+print(longueurNomv2(['Jean-Michel', 'Marc', 'Vanessa', 'Anne', 'Maximilien', 'Alexandre-Benoît', 'Louise']))
