@@ -1,0 +1,46 @@
+body {
+margin-left: 300px;
+margin-right: 300px;
+font-family: sans-serif;
+padding-top: 125px;
+padding-bottom: 125px;
+text-align: center;
+
+}
+
+a {
+
+}
+
+h1 {
+font-size: 27px;
+line-height: 50px;
+font-style: italic;
+}
+
+h2  {
+padding-top: 50px;
+font-size: 22px;
+padding-bottom: 50px;
+}
+
+img{
+padding-bottom: 20px;
+width: 300px;
+}
+
+p {
+padding-top: 5px;
+font-size: 13px;
+text-align: justify;
+line-height: 15px;
+}
+
+.author {
+font-size: 10px;
+text-align: center;
+}
+
+.soustitre {
+font-size: 10px;
+}
