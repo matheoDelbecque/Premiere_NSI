@@ -36,3 +36,20 @@ def longueurNomv2(liste_nom) :
         liste_longueur[i] = len(liste_nom[i])
     return liste_longueur
 print(longueurNomv2(['Jean-Michel', 'Marc', 'Vanessa', 'Anne', 'Maximilien', 'Alexandre-Benoît', 'Louise']))
+
+#exercice 6
+def affiche_liste(liste):
+    for c in liste:
+        print(c,end=' ')
+t=['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+affiche_liste(t)
+
+#exercice 7
+def enleveDoublon(liste):
+    res = ''
+    for c in liste:
+        if not(c in liste):
+            res.append(c)
+    return res
+liste_entier = [23, 45, 23, 43, 7, 66, 21, 45, 23, 7, 200, 200]
+print(enleveDoublon(liste_entier))
