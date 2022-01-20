@@ -55,3 +55,15 @@ def enleveDoublon(liste):
     return liste_sans_doublons
 liste_entier = [23, 45, 23, 43, 7, 66, 21, 45, 23, 7, 200, 200]
 print(enleveDoublon(liste_entier))
+
+#exercice 8
+
+def alterne(liste1,liste2):
+    liste3 = []
+    for i in range(len(liste1)):
+        liste3.append(liste1[i])
+        liste3.append(liste2[i])
+    return liste3
+t1 = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+t2 = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+print(alterne(t1,t2))
