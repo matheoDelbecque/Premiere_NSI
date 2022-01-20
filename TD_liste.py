@@ -82,3 +82,35 @@ b = [9093, 2559, 9664, 8075, 4525, 5847, 67, 8932, 5049, 5241, 5886, 1393, 9413,
 for i in range(len(a)):
     if a[i] == b[i]:
         print("le nombre",a[i],"d'indice",i,"est dans les deux liste")
+
+#exercice 10
+
+#1)
+def permute(liste,i,j):
+    """
+    description: échange dans la liste les éléments d\'indice i et j
+    liste (list)
+    i, j (int): indices des éléments à permuter 
+    ATTENTION : MODIFICATION DE LA LISTE EN PLACE !!
+    """
+    c = liste[i]
+    c2 = liste[j]
+    liste[i] = c2
+    liste[j] = c
+    return liste
+liste = ["Bob", "Alice", "Marc", "Tom", "John"]
+print(permute(liste,0,3))
+
+#2)
+def reverse(liste):
+    """
+    description: inverse l'ordre des éléménts de la liste
+    liste (list)
+    ATTENTION : MODIFICATION DE LA LISTE EN PLACE !!
+    """
+    
+#ecrire la liste dans le sens inverse
+#pas de nouvelle liste, la même
+#1er boucle permuter bob et john
+#2ème boucle permuter alice et Tom
+#ect...
