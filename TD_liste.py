@@ -102,15 +102,18 @@ liste = ["Bob", "Alice", "Marc", "Tom", "John"]
 print(permute(liste,0,3))
 
 #2)
+liste = ["Bob", "Alice", "Marc", "Tom", "John"]
 def reverse(liste):
     """
     description: inverse l'ordre des éléménts de la liste
     liste (list)
     ATTENTION : MODIFICATION DE LA LISTE EN PLACE !!
     """
-    
-#ecrire la liste dans le sens inverse
-#pas de nouvelle liste, la même
-#1er boucle permuter bob et john
-#2ème boucle permuter alice et Tom
-#ect...
+    ind_1 = 0
+    ind_2 = len(liste)-1
+    for i in range(len(liste)//2):
+        permute(liste,ind_1,ind_2)
+        ind_1 = ind_1 + 1
+        ind_2 = ind_2 - 1
+    return liste
+print(reverse(liste))
