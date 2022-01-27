@@ -22,3 +22,20 @@ def decroissant_while(n):
         print(n,end=' ')
         n = n - 1
 decroissant_while(6)
+
+#exercice 4
+#3)
+def somme1(n1,n2):
+    S = 0
+    for k in range(n1,n2):
+        S = S + k
+    return S
+print(somme1(1,5))
+
+def somme2(n1,n2):
+    S = 0
+    for k in range(n2):
+        k = k + 1
+        S = S + k
+    return S
+print(somme2(1,5))
