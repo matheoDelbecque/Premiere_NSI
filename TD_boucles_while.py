@@ -34,8 +34,7 @@ print(somme1(1,5))
 
 def somme2(n1,n2):
     S = 0
-    for k in range(n2):
-        k = k + 1
+    for k in range(n1+1,n2+1):
         S = S + k
     return S
 print(somme2(1,5))
