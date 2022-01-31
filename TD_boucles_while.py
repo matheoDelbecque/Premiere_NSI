@@ -86,3 +86,28 @@ while L < 800:
     N = N + 1
     somme = somme + L*12
 print(N-1,L,somme-L*12)
+
+#exercice 7
+#2)
+def est_premier(nb):
+    if nb == 1 or nb == 0:
+        return False
+    div = 2
+    while div < nb:
+        if nb % div == 0:
+            return False
+        div = div + 1
+    return True
+print(est_premier(7))
+print(est_premier(8))
+print(est_premier(2))
+print(est_premier(1))
+
+#3)
+def k_premiers(k):
+    nb = 0
+    while nb < k:
+        if est_premier(nb) == True:
+            print(nb, end= ' ')
+k_premiers(3)
+k_premiers(5)
