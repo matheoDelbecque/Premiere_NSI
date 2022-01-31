@@ -38,3 +38,32 @@ def somme2(n1,n2):
         S = S + k
     return S
 print(somme2(1,5))
+
+#exercice 5
+#1)
+def nombres_alenvers(n):
+    alenvers = ''
+    while n > 0:
+        alenvers = alenvers + str(n%10)
+        n = n // 10
+    return int(alenvers)
+print(nombres_alenvers(1234))
+
+#2)
+def palindrome(n):
+    return n == nombres_alenvers(n)
+print(palindrome(1234))
+print(palindrome(121))
+
+#exercice 8
+def est_present(c,s):
+    i = 0
+    while i < len(s):
+        res = c == s[i]
+        i = i + 1
+        if res == True:
+            return res
+    return False
+print(est_present('t','python'))
+print(est_present('z',"je ne trouve pas"))
+print(est_present('a',''))
