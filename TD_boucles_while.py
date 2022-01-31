@@ -67,3 +67,22 @@ def est_present(c,s):
 print(est_present('t','python'))
 print(est_present('z',"je ne trouve pas"))
 print(est_present('a',''))
+
+#exercice 6
+#1)
+L = 700
+N = 0
+while L < 800:
+    L = L * 1.015
+    N = N + 1
+print(N-1)
+
+#2)
+L = 700
+N = 0
+somme = 0
+while L < 800:
+    L = L * 1.015
+    N = N + 1
+    somme = somme + L*12
+print(N-1,L,somme-L*12)
