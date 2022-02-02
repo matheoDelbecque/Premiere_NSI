@@ -105,9 +105,13 @@ print(est_premier(1))
 
 #3)
 def k_premiers(k):
-    nb = 0
-    while nb < k:
-        if est_premier(nb) == True:
-            print(nb, end= ' ')
+    x = 0
+    nb_premier = 0
+    while nb_premier < k:
+        if est_premier(x) == True:
+            print(x, end= ' ')
+            nb_premier = nb_premier + 1
+        x = x + 1
+    print()
 k_premiers(3)
 k_premiers(5)
