@@ -55,19 +55,6 @@ def palindrome(n):
 print(palindrome(1234))
 print(palindrome(121))
 
-#exercice 8
-def est_present(c,s):
-    i = 0
-    while i < len(s):
-        res = c == s[i]
-        i = i + 1
-        if res == True:
-            return res
-    return False
-print(est_present('t','python'))
-print(est_present('z',"je ne trouve pas"))
-print(est_present('a',''))
-
 #exercice 6
 #1)
 L = 700
@@ -115,6 +102,19 @@ def k_premiers(k):
     print()
 k_premiers(3)
 k_premiers(5)
+
+#exercice 8
+def est_present(c,s):
+    i = 0
+    while i < len(s):
+        res = c == s[i]
+        i = i + 1
+        if res == True:
+            return res
+    return False
+print(est_present('t','python'))
+print(est_present('z',"je ne trouve pas"))
+print(est_present('a',''))
 
 #exercice 9
 def syracuse(x):
