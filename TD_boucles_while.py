@@ -115,3 +115,34 @@ def k_premiers(k):
     print()
 k_premiers(3)
 k_premiers(5)
+
+#exercice 9
+def syracuse(x):
+    nb = x
+    vol = 0
+    alt_max = 0
+    print(nb,end=' ')
+    while nb > 0:
+        if nb > alt_max:
+            alt_max = nb
+        else:
+            pass
+        if nb % 2 == 0:
+            nb = nb // 2
+            print(nb,end=' ')
+            vol = vol + 1
+            if nb == 1:
+                print()
+                print('le temps de vol pour',x,'est de',vol,'et son altitude maximale est de',alt_max)
+                break
+        elif nb == 1:
+            print(nb)
+            vol = vol + 1
+            print()
+            print('le temps de vol pour',x,'est de',vol,'et son altitude maximale est de',alt_max)
+            break
+        else :
+            nb = nb * 3 + 1
+            print(nb,end=' ')
+            vol = vol + 1
+syracuse(3)
