@@ -1,0 +1,14 @@
+#exercice 2
+def quatreOperations(a,b):
+    return a+b,a-b,a*b,a/b
+print(quatreOperations(8,2))
+
+#exercice 3
+#1)
+def prefixe(t,e):
+    return (e,) + t
+print(prefixe((3,1,1,5,9), 4))
+#2)
+def suffixe(t,e):
+    return t + (e,)
+print(suffixe((3,1,1,5,9), 4))
