@@ -118,31 +118,18 @@ print(est_present('a',''))
 
 #exercice 9
 def syracuse(x):
-    nb = x
+    i = x
     vol = 0
-    alt_max = 0
-    print(nb,end=' ')
-    while nb > 0:
-        if nb > alt_max:
-            alt_max = nb
+    altitude = x
+    while i > 1:
+        print(i,end=' ')
+        vol = vol + 1
+        if i % 2 == 0:
+            i = i // 2
         else:
-            pass
-        if nb % 2 == 0:
-            nb = nb // 2
-            print(nb,end=' ')
-            vol = vol + 1
-            if nb == 1:
-                print()
-                print('le temps de vol pour',x,'est de',vol,'et son altitude maximale est de',alt_max)
-                break
-        elif nb == 1:
-            print(nb)
-            vol = vol + 1
-            print()
-            print('le temps de vol pour',x,'est de',vol,'et son altitude maximale est de',alt_max)
-            break
-        else :
-            nb = nb * 3 + 1
-            print(nb,end=' ')
-            vol = vol + 1
+            i = i * 3 + 1
+        if altitude < i:
+            altitude = i
+    print()
+    print('le temps de vol pour',x,'est de',vol,'et son altitude maximale est de',altitude)
 syracuse(3)
