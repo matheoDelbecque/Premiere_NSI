@@ -1,0 +1,10 @@
+def nettoyage_mot(chaine):
+    chaine = chaine.lower()
+    accent = ['é','è','ê','à','â','ù','û','ç','ô','ï','î']
+    sans_accent = ['e','e','e','a','a','u','u','c','o','i','i']
+    i = 0
+    while i < len(accent):
+        chaine = chaine.replace(accent[i], sans_accent[i])
+        i = i + 1
+    return chaine
+print(nettoyage_mot("Déjà"))
