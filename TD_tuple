@@ -12,3 +12,7 @@ print(prefixe((3,1,1,5,9), 4))
 def suffixe(t,e):
     return t + (e,)
 print(suffixe((3,1,1,5,9), 4))
+#3)
+def insere(e,i,t):
+    return t[0:i] + (e,) + t[i:len(t)]
+print(insere(4,2,(3,1,1,5,9)))
