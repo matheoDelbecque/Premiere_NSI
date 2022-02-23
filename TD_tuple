@@ -16,3 +16,9 @@ print(suffixe((3,1,1,5,9), 4))
 def insere(e,i,t):
     return t[0:i] + (e,) + t[i:len(t)]
 print(insere(4,2,(3,1,1,5,9)))
+
+#exercice 4
+def supprime(t,i):
+    nouveau_tuple = t[0:i] + t[i+1:len(t)]
+    return nouveau_tuple
+print(supprime((3,1,1,5,9),3))
