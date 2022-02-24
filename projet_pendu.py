@@ -1,4 +1,6 @@
 from random import randint
+LETTRE_DEJA_CHOISIES = []
+
 def nettoyage_mot(mot):
     mot = mot.lower()
     mot = mot[0:len(mot)-1]
@@ -16,5 +18,40 @@ def tirage_au_sort(nom_fichier):
         chaine = fichier.readline()
     fichier.close()
     return chaine
-print(tirage_au_sort('dictionnaire.txt'))
+
+def deja_choisie(lettre):
+    global LETTRES_DEJA_CHOISIES
+    if lettre in LETTRE_DEJA_CHOISIES:
+        print("lettre déjà choisie")
+        return True
+    else:
+        LETTRE_DEJA_CHOISIES = LETTRE_DEJA_CHOISIES + [lettre]
+        return False
+
+def jeu_fini():
+    global SCORE
+    global MOT_MYSTERE
+    global MOT_A_DECOUVRIR
+    if SCORE == 0 or MOT_MYSTERE == MOT_A_DECOUVRIR:
+        return True
+    else:
+        return False
+
+def afficher_bilan():
+    global SCORE
+    global MOT_A_DECOUVRIR
+    if score == 0:
+        print("Vous avez perdu !!\nLe mot recherché était",MOT_A_DECOUVRIR)
+    else:
+        print("Bravo! Vous avez trouvé le mot",MOT_A_DECOUVRIR,"\nVotre SCORE est de",SCORE)
         
+def remplace_tiret(lettre):
+    global MOT_MYSTERE
+    global MOT_A_DECOUVRIR
+    for i in range(len(MOT_A_DECOUVRIR)):
+        if c == MOT_A_DECOUVRIR[i]:
+           MOT_MYSTERE.replace(MOT_MYSTERE[i],c)
+           resultat = True       
+        else:
+           resultat = False
+    return resultat
