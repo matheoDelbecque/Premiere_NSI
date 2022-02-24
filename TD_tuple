@@ -22,3 +22,11 @@ def supprime(t,i):
     nouveau_tuple = t[0:i] + t[i+1:len(t)]
     return nouveau_tuple
 print(supprime((3,1,1,5,9),3))
+
+#exercice 5
+def ajoute(t1,t2):
+    t = ()
+    for i in range(len(t1)):
+        t = t + (t1[i] + t2[i],)
+    return t
+print(ajoute((3,1,5),(6,0,2)))
