@@ -49,9 +49,9 @@ def remplace_tiret(lettre):
     global MOT_MYSTERE
     global MOT_A_DECOUVRIR
     for i in range(len(MOT_A_DECOUVRIR)):
-        if c == MOT_A_DECOUVRIR[i]:
-           MOT_MYSTERE.replace(MOT_MYSTERE[i],c)
-           resultat = True       
+        if lettre == MOT_A_DECOUVRIR[i]:
+           MOT_MYSTERE = MOT_MYSTERE[0:i] + lettre + MOT_MYSTERE[i+1:len(MOT_MYSTERE)+1]
+           resultat = True
         else:
            resultat = False
-    return resultat
+    return
