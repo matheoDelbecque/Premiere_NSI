@@ -1,0 +1,12 @@
+def sous_reseau(ip,masque):
+    liste_ip = []
+    split_ip = ip.split(".")
+    liste_masque = []
+    split_masque = masque.split(".")
+    for nb in split_ip:
+        nb = int(nb)
+        liste_ip.append(bin(nb))
+    for nb in split_masque:
+        nb = int(nb)
+        liste_masque.append(bin(nb))
+sous_reseau("170.16.56.103", "255.255.0.0")
