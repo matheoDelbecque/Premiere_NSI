@@ -1,8 +1,13 @@
+#1)
 def sous_reseau(ip,masque):
     reseau = []
     ip = ip.split(".")
     masque = masque.split(".")
     for i in range(len(ip)):
         reseau.append(int(ip[i]) & int(masque[i]))
-    return reseau[0].reseau[1].reseau[2].reseau[3]
+    adresse_reseau = str(reseau[0]) + "." + str(reseau[1]) + "." + str(reseau[2]) + "." + str(reseau[3])
+    return adresse_reseau
+print(sous_reseau("192.168.16.8", "255.255.255.0"))
 print(sous_reseau("170.16.56.103", "255.255.0.0"))
+print(sous_reseau("32.3.146.13", "255.0.0.0"))
+print(sous_reseau("192.168.210.8", "255.255.248.0"))
