@@ -11,3 +11,12 @@ print(sous_reseau("192.168.16.8", "255.255.255.0"))
 print(sous_reseau("170.16.56.103", "255.255.0.0"))
 print(sous_reseau("32.3.146.13", "255.0.0.0"))
 print(sous_reseau("192.168.210.8", "255.255.248.0"))
+
+#2)
+def dans_sous_reseau(ip1,ip2,masque):
+    if sous_reseau(ip1,masque) == sous_reseau(ip2,masque):
+        return True
+    else:
+        return False
+print(dans_sous_reseau("192.168.16.8", "192.168.16.55", "255.255.255.0"))
+print(dans_sous_reseau("192.168.16.8", "192.168.12.55", "255.255.255.0"))
