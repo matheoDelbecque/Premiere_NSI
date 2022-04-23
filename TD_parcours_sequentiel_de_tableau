@@ -1,0 +1,73 @@
+from random import randrange
+liste = []
+for i in range(100):
+    liste.append(randrange(500))
+print(liste)
+
+def recherche(liste, valeur):
+    """
+    Description de la fonction : Détermine si la valeur est présente dans la liste
+    paramètre liste (list)
+    paramètre valeur (type quelconque)
+    Return (bool)
+    """
+    if valeur in liste :
+        return True
+    else :
+        return False
+print(recherche(liste,35))
+
+def recherche_indice(liste, valeur):
+    """
+    Description de la fonction : Renvoie l'indice de la valeur recherchée (None si valeur non présente)
+    paramètre liste (list) : liste non vide
+    paramètre valeur (type quelconque)
+    Return (int ou Nonetype)
+    """
+    for i in range(len(liste)):
+        if liste[i] == valeur :
+            return i
+    return None
+print(recherche_indice(liste,45))
+
+def recherche_minimum(liste):
+    """
+    Description de la fonction : Renvoie la plus petite valeur de la liste
+    paramètre liste (list) : liste non vide d'entiers(int), de nombres réels(float) ou de chaîne de caractères(str)
+    Return (int)
+    """
+    i = 0
+    res = liste[0]
+    while i < len(liste) :
+        if res > liste[i] :
+            res = liste[i]
+        i = i + 1
+    return res
+print(recherche_minimum(liste))
+
+def recherche_maximum(liste):
+    """
+    Description de la fonction : Renvoie la plus grande valeur de la liste
+    paramètre liste (list) : liste non vide d'entiers(int), de nombres réels(float) ou de chaîne de caractères(str)
+    Return (int)
+    """
+    i = 0
+    res = liste[0]
+    while i < len(liste) :
+        if res < liste[i] :
+            res = liste[i]
+        i = i + 1
+    return res
+print(recherche_maximum(liste))
+
+def moyenne(liste):
+    """
+    Description de la fonction : Calcule la moyenne des valeurs contenues dans la liste
+    paramètre liste (list) : liste non vide d'entiers(int) ou de nombres réels(float)
+    Return (int)
+    """
+    somme = 0
+    for c in liste :
+        somme = somme + c
+    return somme/len(liste)
+print(moyenne(liste))
