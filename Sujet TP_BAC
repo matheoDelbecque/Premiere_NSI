@@ -1,0 +1,30 @@
+#Sujet TP_1
+def recherche(caractere,mot):
+    res = 0
+    for e in mot :
+        if e == caractere :
+            res = res + 1
+    return res
+print(recherche('e', "sciences"))
+print(recherche('i',"mississippi"))
+print(recherche('a',"mississippi"))
+print()
+
+#Sujet TP_2
+def moyenne(liste):
+    num = 0
+    denom = 0
+    for tupl in liste :
+        num = num + tupl[0] * tupl[1]
+        denom = denom + tupl[1]
+    return num/denom
+print(moyenne([(15,2),(9,1),(12,3)]))
+print()
+
+#Sujet TP_3
+def delta(liste):
+    res = []
+    for e in liste :
+        
+    return res
+print(delta([1000, 800, 802, 1000, 1003]))
