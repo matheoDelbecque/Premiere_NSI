@@ -11,9 +11,9 @@ def recherche(liste, valeur):
     paramètre valeur (type quelconque)
     Return (bool)
     """
-    if valeur in liste :
-        return True
-    else :
+    for e in liste :
+        if e == valeur :
+            return True
         return False
 print(recherche(liste,35))
 
