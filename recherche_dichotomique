@@ -1,0 +1,12 @@
+def recherche_dichotomique(liste,valeur):
+    gauche = 0
+    droit = len(liste) - 1
+    while gauche <= droit:
+        pivot = (gauche + droit) // 2
+        if liste[pivot] == valeur:
+            return True
+        elif liste[pivot] > valeur:
+            droit = pivot - 1
+        else:
+            gauche = pivot + 1
+    return False
