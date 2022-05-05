@@ -10,3 +10,11 @@ def recherche_dichotomique(liste,valeur):
         else:
             gauche = pivot + 1
     return False
+
+#exercice 3
+def nb_tours(n):
+    k = 0
+    while 2**k < n:
+        k = k + 1
+    return k
+print(nb_tours(50))
