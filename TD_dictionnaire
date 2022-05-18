@@ -71,7 +71,7 @@ def nb_de_fois(lettre,chaine):
     
 def occurence(chaine):
     lettre = []
-    for e in fichier:
+    for e in chaine:
         if not(e in lettre):
             lettre = lettre.append(e)
     res = {}
@@ -79,3 +79,4 @@ def occurence(chaine):
     while i <= len(lettre) - 1:
         res[lettre[i]] = nb_de_fois(lettre[i],chaine)
     return res
+print(occurence(lecture(big_brother.txt))) 
