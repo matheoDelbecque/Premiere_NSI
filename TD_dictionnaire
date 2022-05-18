@@ -31,8 +31,8 @@ def recherche_velo_V2(parc):
     """
     res = ()
     for i in range(len(parc)):
-        if "dispo" in parc_velib[i].values():
-            res = res + (parc_velib[i]["station"],)
+        if "dispo" in parc[i].values():
+            res = res + (parc[i]["station"],)
     if res != ():
         return res
     return None
