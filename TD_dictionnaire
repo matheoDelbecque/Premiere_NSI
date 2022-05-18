@@ -4,8 +4,8 @@ velo_1["statut"] = "dispo"
 print("dispo" in velo_1.values())
 
 #exercice 2bis
-velo_2 = {"id" : 4869, "typ" : "classique", "station" : "lycée Jean Rostand", "statut" : "dispo"}
-velo_3 = {"id" : 2689, "typ" : "electrique", "station" : "place Chaptal", "statut" : "en panne"}
+velo_2 = {"id" : 4869, "typ" : "classique", "station" : "lycée Jean Rostand", "statut" : "en panne"}
+velo_3 = {"id" : 2689, "typ" : "electrique", "station" : "place Chaptal", "statut" : "dispo"}
 parc_velib = []
 parc_velib.append(velo_1)
 parc_velib.append(velo_2)
@@ -24,3 +24,16 @@ def recherche_velo(parc):
 print(recherche_velo(parc_velib))
 
 def recherche_velo_V2(parc):
+    """
+    role : recherhce les lieux ou un velib est disponible
+    parc (liste de dictionnaire) : liste qui contient tous les velos du parc
+    return (bool) : les lieux si disponibles, None sinon
+    """
+    res = ()
+    for i in range(len(parc)):
+        if "dispo" in parc_velib[i].values():
+            res = res + (parc_velib[i]["station"],)
+    if res != ():
+        return res
+    return None
+print(recherche_velo_V2(parc_velib))
