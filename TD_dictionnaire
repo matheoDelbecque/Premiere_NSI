@@ -78,3 +78,4 @@ def occurence(chaine):
     i = 0
     while i <= len(lettre) - 1:
         res[lettre[i]] = nb_de_fois(lettre[i],chaine)
+    return res
