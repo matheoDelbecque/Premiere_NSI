@@ -37,3 +37,16 @@ def recherche_velo_V2(parc):
         return res
     return None
 print(recherche_velo_V2(parc_velib))
+
+#exercice 3
+positions = {}
+positions[(48.853585, 2.301490)] = "Paris"
+positions[(11.611358, 43.147752)] = "Djibouti"
+positions[(37.023113, -8.996601)] = "Fortaleza de Sao Vicente"
+positions[(7.677989,-5.025387)] = "Bouaké"
+
+def localisation_photo(GPS,dico):
+    if GPS in dico.keys():
+        return dico[GPS]
+    return None
+print(localisation_photo((37.023113, -8.996601),positions))
