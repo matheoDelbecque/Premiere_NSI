@@ -50,3 +50,31 @@ def localisation_photo(GPS,dico):
         return dico[GPS]
     return None
 print(localisation_photo((37.023113, -8.996601),positions))
+
+#exercice 4
+def lecture(nom_fichier):
+    """
+    description : ouvre un fichier texte et renvoie son contenu sous la forme d'une chaîne de caractère
+    paramètre nom_fichier(str) : nom du fichier
+    return (str) : contenu du fichier
+    """
+    with open(nom_fichier,'r') as fichier:
+        return fichier.read()
+
+def nb_de_fois(lettre,chaine):
+    i = i + 1
+    valeur = 0
+    while i <= len(chaine) - 1:
+        if chaine[i] == lettre:
+            valeur = valeur + 1
+        i = i + 1
+    
+def occurence(chaine):
+    lettre = []
+    for e in fichier:
+        if not(e in lettre):
+            lettre = lettre.append(e)
+    res = {}
+    i = 0
+    while i <= len(lettre) - 1:
+        res[lettre[i]] = nb_de_fois(lettre[i],chaine)
