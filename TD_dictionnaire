@@ -31,7 +31,7 @@ def recherche_velo_V2(parc):
     """
     res = ()
     for i in range(len(parc)):
-        if "dispo" in parc[i].values():
+        if "dispo" in parc[i]["statut"]:
             res = res + (parc[i]["station"],)
     if res != ():
         return res
@@ -46,10 +46,11 @@ positions[(37.023113, -8.996601)] = "Fortaleza de Sao Vicente"
 positions[(7.677989,-5.025387)] = "Bouaké"
 
 def localisation_photo(GPS,dico):
-    if GPS in dico.keys():
-        return dico[GPS]
+    for cle in dico.keys():
+        if (abs(GPS[0] - cle[0]) <= 0.0001) and (abs(GPS[1] - cle[1]) <= 0.0001):
+            return dico[cle]
     return None
-print(localisation_photo((37.023113, -8.996601),positions))
+print(localisation_photo((37.02311, -8.9966),positions))
 
 #exercice 4
 def lecture(nom_fichier):
@@ -79,4 +80,4 @@ def occurence(chaine):
     while i <= len(lettre) - 1:
         res[lettre[i]] = nb_de_fois(lettre[i],chaine)
     return res
-print(occurence(lecture(big_brother.txt))) 
+print(occurence(lecture(big_brother.txt)))
