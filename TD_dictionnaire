@@ -62,22 +62,10 @@ def lecture(nom_fichier):
     with open(nom_fichier,'r') as fichier:
         return fichier.read()
 
-def nb_de_fois(lettre,chaine):
-    i = i + 1
-    valeur = 0
-    while i <= len(chaine) - 1:
-        if chaine[i] == lettre:
-            valeur = valeur + 1
-        i = i + 1
-    
 def occurence(chaine):
-    lettre = []
-    for e in chaine:
-        if not(e in lettre):
-            lettre = lettre.append(e)
     res = {}
-    i = 0
-    while i <= len(lettre) - 1:
-        res[lettre[i]] = nb_de_fois(lettre[i],chaine)
+    for e in chaine:
+        if not(e in chaine):
+            res[e] = 
     return res
 print(occurence(lecture(big_brother.txt)))
