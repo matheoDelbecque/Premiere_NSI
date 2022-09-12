@@ -1,0 +1,20 @@
+def somme_recursif(n):
+    if n == 0 :
+        return 0
+    else : 
+        return n + somme_recursif(n-1)
+
+##somme_recursif(100)
+
+def somme_iteratif(n):
+    somme = 0
+    for e in range(n+1):
+        somme = somme + e
+    return somme
+
+##print(somme_iteratif(4))
+
+import timeit
+
+print(timeit.timeit('somme_recursif(100)', number=50, setup="from __main__ import somme_recursif"))
+print(timeit.timeit('somme_iteratif(100)', number=50, setup="from __main__ import somme_iteratif"))
