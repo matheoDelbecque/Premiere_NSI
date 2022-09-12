@@ -1,0 +1,12 @@
+def nombre_de_mots(phrase):
+    mots = 0
+    for e in phrase:
+        if e == ' ':
+            mots = mots + 1
+        elif e == '.':
+            mots = mots + 1
+    return mots
+print(nombre_de_mots('Le point d exclamation est separe !'))
+print(nombre_de_mots('Il y a un seul espace entre les mots !'))
+print(nombre_de_mots('Le point final est colle au dernier mot.'))
+print(nombre_de_mots('Gilbouze macarbi acra cor ed filbuzine ?'))
