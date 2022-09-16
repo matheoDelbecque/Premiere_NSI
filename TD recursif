@@ -40,3 +40,14 @@ def prems(n):
         return None
 
 prems(4)
+
+# exercice 3
+def factorielle(n):
+    if n == 1 :
+        return 1
+    elif n == 0 :
+        return 1
+    else :
+        calcul = n * factorielle(n-1)
+        return calcul
+print(factorielle(0))
