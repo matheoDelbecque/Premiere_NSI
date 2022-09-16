@@ -51,3 +51,23 @@ def factorielle(n):
         calcul = n * factorielle(n-1)
         return calcul
 print(factorielle(0))
+
+# exercice 4
+def fonctionDeux(n):
+    if n == 0 :
+        return 1
+    else :
+        return n + fonctionDeux(n-2)
+print(fonctionDeux(10))
+print(fonctionDeux(5))
+
+def mystere(n,p):
+    """
+    n et p sont deux entiers naturels
+    """
+    if p == 0 :
+        return 0
+    else :
+        return n + mystere(n, p-1)
+
+print(mystere(3,6))
