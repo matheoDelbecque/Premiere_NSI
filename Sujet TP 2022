@@ -1,0 +1,20 @@
+#sujet TP_1, exercice 1
+def recherche(caractere,mot):
+    occurrence = 0
+    for e in mot:
+        if e == caractere:
+            occurrence = occurrence + 1
+    return occurrence
+print(recherche('e', "sciences"))
+print(recherche('i',"mississippi"))
+print(recherche('a',"mississippi"))
+
+#sujet TP_2, exercice 1
+def moyenne(liste):
+    num = 0
+    denom = 0
+    for tupl in liste:
+        num = num + tupl[0] * tupl[1]
+        denom = denom + tupl[1]
+    return num/denom
+print(moyenne([(15,2),(9,1),(12,3)]))
